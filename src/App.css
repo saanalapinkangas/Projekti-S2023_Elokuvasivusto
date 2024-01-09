@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: hsla(225, 43%, 16%, 1);
+  background: linear-gradient(360deg, hsla(218, 56%, 23%, 1) 0%, hsla(225, 43%, 16%, 1) 100%);
+  background: -moz-linear-gradient(360deg, hsla(218, 56%, 23%, 1) 0%, hsla(225, 43%, 16%, 1) 100%);
+  background: -webkit-linear-gradient(360deg, hsla(218, 56%, 23%, 1) 0%, hsla(225, 43%, 16%, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1A335D", endColorstr="#18213C", GradientType=1);
+  transition: background 0.5s ease-in-out;
+  font-family: 'Open Sans', Helvetica;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h1 {
+  font-family: 'Nunito', Helvetica;
+  font-size: 23px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Nunito', Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+h4 {
+  color: #4DAAB3;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: 'Nunito', Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  color: #C7613D;
+  margin-bottom: 0px;
+}
+
+.start {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p a {
+  text-decoration: none;
+  color: #C7613D;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #4DAAB3;
+}
+
+.esittelytxt {
+  font-family: 'Nunito', Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  width: 70%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 3% auto;
+}
+
+
+.luettelo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  font-family: 'Nunito', Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.filtterijono {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.kayttaja {
+  width: 50%;
+  justify-content: none;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.luettelo_osio {
+  float: left;
+  width: auto;
+}
+
+.luettelo_osio h3 {
+  padding-right: 20px;
+}
+
+.kirjoitusalueet {
+  width: 60%;
+  align-items: none;
+}
+
+.leveys70 {
+  width: 70%;
+}
+
+.leveys60 {
+  width: 60%;
+}
+
+.leveys50 {
+  width: 50%;
+}
+
+.leveys30 {
+  width: 30%;
+}
+
+.leveys20 {
+  width: 20%;
+}
+
+.leveys80 {
+  width: 80%;
+}
+
+.leveys90 {
+  width: 90%;
+}
+
+.leveys100 {
+  width: 100%;
+}
+
+hr {
+  height: 1px;
+  width: 95%;
+  background-color: #aeaeae;
+  border: 0;
+}
+
+/*Yhteisön hallintapaneelin linkit */
+.hyvaksy a{
+  color: #4DAAB3;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.hyvaksy a:hover{
+  color: #C7613D;
+}
+
+.hylkays a{
+  color: #E33333;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.hylkays a:hover{
+  color: #4DAAB3;
+}
+
+/* Uutiset */
+.uutiset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.uutiset_kuva{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.uutiset_kuva img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.uutiskuva:hover {
+  opacity: 0.8;
+}
+
+.uutiset_info {
+  margin-top: -20px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Review listaukset */
+
+.review-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.review-item {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.review-column {
+  flex: 1;
+}
+
+.review-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-width: 800px) {
+  .esittelytxt {
+    width: 100%;
+  }
+  .luettelo {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .leveys20 {
+    width: 100%;
+  }
+
+  .leveys80 {
+    width: 100%;
+  }
+
+  .leveys30 {
+    width: 100%;
+  }
+
+  .leveys70 {
+    margin-bottom: 20px;
+  }
+
+  .kayttaja {
+    width: 100%;
+  }
+
+  .kirjoitusalueet {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1050px) {
+  .esittelytxt {
+    width: 100%;
+  }
+  .luettelo {
+    width: 100%;
+  }
+}
